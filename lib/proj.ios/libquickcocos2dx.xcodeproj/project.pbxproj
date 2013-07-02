@@ -269,6 +269,25 @@
 		F4FBA53C16D8C97A00CD8EC1 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FBA53216D8C97900CD8EC1 /* SBJsonBase.m */; };
 		F4FBA53D16D8C97A00CD8EC1 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FBA53416D8C97A00CD8EC1 /* SBJsonParser.m */; };
 		F4FBA53E16D8C97A00CD8EC1 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FBA53616D8C97A00CD8EC1 /* SBJsonWriter.m */; };
+		FFC5482D17829A3D00A05F05 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5481517829A3C00A05F05 /* alloc.c */; };
+		FFC5482E17829A3D00A05F05 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5481717829A3D00A05F05 /* array.c */; };
+		FFC5482F17829A3D00A05F05 /* bootstrap.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5481917829A3D00A05F05 /* bootstrap.c */; };
+		FFC5483017829A3D00A05F05 /* context.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5481B17829A3D00A05F05 /* context.c */; };
+		FFC5483117829A3D00A05F05 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5481D17829A3D00A05F05 /* decode.c */; };
+		FFC5483217829A3D00A05F05 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5481F17829A3D00A05F05 /* map.c */; };
+		FFC5483317829A3D00A05F05 /* pattern.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482117829A3D00A05F05 /* pattern.c */; };
+		FFC5483417829A3D00A05F05 /* pbc-lua.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482317829A3D00A05F05 /* pbc-lua.c */; };
+		FFC5483517829A3D00A05F05 /* proto.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482417829A3D00A05F05 /* proto.c */; };
+		FFC5483617829A3D00A05F05 /* register.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482617829A3D00A05F05 /* register.c */; };
+		FFC5483717829A3D00A05F05 /* rmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482717829A3D00A05F05 /* rmessage.c */; };
+		FFC5483817829A3D00A05F05 /* stringpool.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482817829A3D00A05F05 /* stringpool.c */; };
+		FFC5483917829A3D00A05F05 /* varint.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482A17829A3D00A05F05 /* varint.c */; };
+		FFC5483A17829A3D00A05F05 /* wmessage.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5482C17829A3D00A05F05 /* wmessage.c */; };
+		FFC548641782A6AC00A05F05 /* lpcap.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC548551782A6AC00A05F05 /* lpcap.c */; };
+		FFC548651782A6AC00A05F05 /* lpcode.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC548571782A6AC00A05F05 /* lpcode.c */; };
+		FFC548661782A6AC00A05F05 /* lpprint.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5485B1782A6AC00A05F05 /* lpprint.c */; };
+		FFC548671782A6AC00A05F05 /* lptree.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC5485D1782A6AC00A05F05 /* lptree.c */; };
+		FFC548681782A6AC00A05F05 /* lpvm.c in Sources */ = {isa = PBXBuildFile; fileRef = FFC548601782A6AC00A05F05 /* lpvm.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -830,6 +849,44 @@
 		F4FBA53416D8C97A00CD8EC1 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		F4FBA53516D8C97A00CD8EC1 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		F4FBA53616D8C97A00CD8EC1 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		FFC5481517829A3C00A05F05 /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		FFC5481617829A3D00A05F05 /* alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = alloc.h; sourceTree = "<group>"; };
+		FFC5481717829A3D00A05F05 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
+		FFC5481817829A3D00A05F05 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
+		FFC5481917829A3D00A05F05 /* bootstrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bootstrap.c; sourceTree = "<group>"; };
+		FFC5481A17829A3D00A05F05 /* bootstrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bootstrap.h; sourceTree = "<group>"; };
+		FFC5481B17829A3D00A05F05 /* context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = context.c; sourceTree = "<group>"; };
+		FFC5481C17829A3D00A05F05 /* context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = context.h; sourceTree = "<group>"; };
+		FFC5481D17829A3D00A05F05 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		FFC5481E17829A3D00A05F05 /* descriptor.pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptor.pbc.h; sourceTree = "<group>"; };
+		FFC5481F17829A3D00A05F05 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
+		FFC5482017829A3D00A05F05 /* map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = map.h; sourceTree = "<group>"; };
+		FFC5482117829A3D00A05F05 /* pattern.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pattern.c; sourceTree = "<group>"; };
+		FFC5482217829A3D00A05F05 /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pattern.h; sourceTree = "<group>"; };
+		FFC5482317829A3D00A05F05 /* pbc-lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pbc-lua.c"; sourceTree = "<group>"; };
+		FFC5482417829A3D00A05F05 /* proto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = proto.c; sourceTree = "<group>"; };
+		FFC5482517829A3D00A05F05 /* proto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proto.h; sourceTree = "<group>"; };
+		FFC5482617829A3D00A05F05 /* register.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = register.c; sourceTree = "<group>"; };
+		FFC5482717829A3D00A05F05 /* rmessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rmessage.c; sourceTree = "<group>"; };
+		FFC5482817829A3D00A05F05 /* stringpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stringpool.c; sourceTree = "<group>"; };
+		FFC5482917829A3D00A05F05 /* stringpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringpool.h; sourceTree = "<group>"; };
+		FFC5482A17829A3D00A05F05 /* varint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = varint.c; sourceTree = "<group>"; };
+		FFC5482B17829A3D00A05F05 /* varint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = varint.h; sourceTree = "<group>"; };
+		FFC5482C17829A3D00A05F05 /* wmessage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = wmessage.c; sourceTree = "<group>"; };
+		FFC5483B17829AEB00A05F05 /* pbc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbc.h; sourceTree = "<group>"; };
+		FFC5483C17829CEC00A05F05 /* pbc-lua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pbc-lua.h"; sourceTree = "<group>"; };
+		FFC548551782A6AC00A05F05 /* lpcap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcap.c; sourceTree = "<group>"; };
+		FFC548561782A6AC00A05F05 /* lpcap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpcap.h; sourceTree = "<group>"; };
+		FFC548571782A6AC00A05F05 /* lpcode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpcode.c; sourceTree = "<group>"; };
+		FFC548581782A6AC00A05F05 /* lpcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpcode.h; sourceTree = "<group>"; };
+		FFC5485B1782A6AC00A05F05 /* lpprint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpprint.c; sourceTree = "<group>"; };
+		FFC5485C1782A6AC00A05F05 /* lpprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpprint.h; sourceTree = "<group>"; };
+		FFC5485D1782A6AC00A05F05 /* lptree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lptree.c; sourceTree = "<group>"; };
+		FFC5485E1782A6AC00A05F05 /* lptree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lptree.h; sourceTree = "<group>"; };
+		FFC5485F1782A6AC00A05F05 /* lptypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lptypes.h; sourceTree = "<group>"; };
+		FFC548601782A6AC00A05F05 /* lpvm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lpvm.c; sourceTree = "<group>"; };
+		FFC548611782A6AC00A05F05 /* lpvm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lpvm.h; sourceTree = "<group>"; };
+		FFC5486A1782AC7700A05F05 /* lpeg_lua.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lpeg_lua.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1007,6 +1064,8 @@
 		F40AFE8216BD160200565A5E /* lua_extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FFC5483D1782A63900A05F05 /* lpeg */,
+				FFC54814178299FD00A05F05 /* pbc */,
 				F4F26D0E1727E73D002D3935 /* socket */,
 				F40AFE8316BD160200565A5E /* cjson */,
 				F45FF34316C7D24200275222 /* lua_extensions.c */,
@@ -2091,6 +2150,58 @@
 			path = json;
 			sourceTree = "<group>";
 		};
+		FFC54814178299FD00A05F05 /* pbc */ = {
+			isa = PBXGroup;
+			children = (
+				FFC5483B17829AEB00A05F05 /* pbc.h */,
+				FFC5481517829A3C00A05F05 /* alloc.c */,
+				FFC5481617829A3D00A05F05 /* alloc.h */,
+				FFC5481717829A3D00A05F05 /* array.c */,
+				FFC5481817829A3D00A05F05 /* array.h */,
+				FFC5481917829A3D00A05F05 /* bootstrap.c */,
+				FFC5481A17829A3D00A05F05 /* bootstrap.h */,
+				FFC5481B17829A3D00A05F05 /* context.c */,
+				FFC5481C17829A3D00A05F05 /* context.h */,
+				FFC5481D17829A3D00A05F05 /* decode.c */,
+				FFC5481E17829A3D00A05F05 /* descriptor.pbc.h */,
+				FFC5481F17829A3D00A05F05 /* map.c */,
+				FFC5482017829A3D00A05F05 /* map.h */,
+				FFC5482117829A3D00A05F05 /* pattern.c */,
+				FFC5482217829A3D00A05F05 /* pattern.h */,
+				FFC5482317829A3D00A05F05 /* pbc-lua.c */,
+				FFC5482417829A3D00A05F05 /* proto.c */,
+				FFC5482517829A3D00A05F05 /* proto.h */,
+				FFC5482617829A3D00A05F05 /* register.c */,
+				FFC5482717829A3D00A05F05 /* rmessage.c */,
+				FFC5482817829A3D00A05F05 /* stringpool.c */,
+				FFC5482917829A3D00A05F05 /* stringpool.h */,
+				FFC5482A17829A3D00A05F05 /* varint.c */,
+				FFC5482B17829A3D00A05F05 /* varint.h */,
+				FFC5482C17829A3D00A05F05 /* wmessage.c */,
+				FFC5483C17829CEC00A05F05 /* pbc-lua.h */,
+			);
+			path = pbc;
+			sourceTree = "<group>";
+		};
+		FFC5483D1782A63900A05F05 /* lpeg */ = {
+			isa = PBXGroup;
+			children = (
+				FFC548551782A6AC00A05F05 /* lpcap.c */,
+				FFC548561782A6AC00A05F05 /* lpcap.h */,
+				FFC548571782A6AC00A05F05 /* lpcode.c */,
+				FFC548581782A6AC00A05F05 /* lpcode.h */,
+				FFC5485B1782A6AC00A05F05 /* lpprint.c */,
+				FFC5485C1782A6AC00A05F05 /* lpprint.h */,
+				FFC5485D1782A6AC00A05F05 /* lptree.c */,
+				FFC5485E1782A6AC00A05F05 /* lptree.h */,
+				FFC5485F1782A6AC00A05F05 /* lptypes.h */,
+				FFC548601782A6AC00A05F05 /* lpvm.c */,
+				FFC548611782A6AC00A05F05 /* lpvm.h */,
+				FFC5486A1782AC7700A05F05 /* lpeg_lua.h */,
+			);
+			path = lpeg;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2400,6 +2511,25 @@
 				F4B61CFA172806280057E1F0 /* luasocket_buffer.c in Sources */,
 				F4B61CFB172806280057E1F0 /* luasocket_io.c in Sources */,
 				F4778ADE1736085400EE1551 /* xxtea.c in Sources */,
+				FFC5482D17829A3D00A05F05 /* alloc.c in Sources */,
+				FFC5482E17829A3D00A05F05 /* array.c in Sources */,
+				FFC5482F17829A3D00A05F05 /* bootstrap.c in Sources */,
+				FFC5483017829A3D00A05F05 /* context.c in Sources */,
+				FFC5483117829A3D00A05F05 /* decode.c in Sources */,
+				FFC5483217829A3D00A05F05 /* map.c in Sources */,
+				FFC5483317829A3D00A05F05 /* pattern.c in Sources */,
+				FFC5483417829A3D00A05F05 /* pbc-lua.c in Sources */,
+				FFC5483517829A3D00A05F05 /* proto.c in Sources */,
+				FFC5483617829A3D00A05F05 /* register.c in Sources */,
+				FFC5483717829A3D00A05F05 /* rmessage.c in Sources */,
+				FFC5483817829A3D00A05F05 /* stringpool.c in Sources */,
+				FFC5483917829A3D00A05F05 /* varint.c in Sources */,
+				FFC5483A17829A3D00A05F05 /* wmessage.c in Sources */,
+				FFC548641782A6AC00A05F05 /* lpcap.c in Sources */,
+				FFC548651782A6AC00A05F05 /* lpcode.c in Sources */,
+				FFC548661782A6AC00A05F05 /* lpprint.c in Sources */,
+				FFC548671782A6AC00A05F05 /* lptree.c in Sources */,
+				FFC548681782A6AC00A05F05 /* lpvm.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

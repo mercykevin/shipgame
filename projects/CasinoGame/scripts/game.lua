@@ -11,6 +11,8 @@ game.scheduleEntry={}
 
 function game.startup()
  	
+ 	require("pbc/testparser")
+ 	--[[
     CCFileUtils:sharedFileUtils():addSearchPath("res/")
     display.addSpriteFramesWithFile(GAME_TEXTURE_DATA_FILENAME, GAME_TEXTURE_IMAGE_FILENAME)
     --
@@ -27,6 +29,7 @@ function game.startup()
 
     game.enterMenuScene()
     -- game.playLevel(1)
+    --]]
 end
 
 function game.exit()
