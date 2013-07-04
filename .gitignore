@@ -11,7 +11,6 @@ log/**/*.log
 *.jar
 *.rar
 *.tar
-*.zip
 *.log
 *.sql
 *.sqlite
@@ -23,3 +22,4 @@ log/**/*.log
 Icon?
 ehthumbs.db
 Thumbs.db
+*.swp
