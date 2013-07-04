@@ -1,0 +1,4 @@
+
+ServerEvent = {
+	RequestError = "requestError"
+}
