@@ -1,1 +1,0 @@
--- update app and connect to facebook scene
