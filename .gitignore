@@ -1,4 +1,5 @@
 
+
 .*
 *.aps
 *.lnk
@@ -8,7 +9,7 @@
 *.vcxproj.user
 *.so
 *.o
-
+*.svn
 debug.log
 
 lib/cocos2d-x/cocos2dx/platform/android/java/bin
