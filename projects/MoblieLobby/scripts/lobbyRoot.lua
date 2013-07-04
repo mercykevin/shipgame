@@ -21,10 +21,18 @@ function lobbyRoot.startLobby()
 --	print(lobbyRoot.jsonParse)
 --	print(lobbyRoot.jsonParse.encode(testJson))
 	CCFileUtils:sharedFileUtils():addSearchPath("assets/")
+	display.addSpriteFramesWithFile("lobbyAssets.plist", "lobbyAssets.png")
+	
+	
 	serverJsonConnection:initServer("http://internal65.grandorientcasino.com:8080/gameserver/jsonmessage/", require("net.parse.JsonDataParse"), nil)
-	display.replaceScene(require("scenes.MainLobbyScene").new(),"fade", 0.3, display.COLOR_WHITE);
+	lobbyRoot.mainScene = require("scenes.MainLobbyScene").new();
+	display.replaceScene(lobbyRoot.mainScene,"fade", 0.3, display.COLOR_WHITE);
 	serverJsonConnection:addEventListener(CommandMap.CMD_REGISTER_PLAYER, onData)
 	serverJsonConnection:sendRequest(CommandMap.CMD_REGISTER_PLAYER, {firstName = "aa", lastName="bb", email = "nightmareljy@gmail.com", facebookId = "333", sex = "male", language = "en_US"});
+end
+
+function lobbyRoot.backToLobby()
+	
 end
 
 function onData(event)
