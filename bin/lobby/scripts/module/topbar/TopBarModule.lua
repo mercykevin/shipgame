@@ -1,6 +1,17 @@
+require("utils.NumberUtil")
+
 local TopBarModule = class("TopBarModule", function() 
 	return display.newLayer();
 end)
+
+function TopBarModule:updateLevelInfo(info)
+	self.expBar:updateLevelInfo(info)
+end
+
+function TopBarModule:updateBalanceInfo(balance)
+	self.textBalance:setString(NumberUtil.getNumberByStyle(balance.amounts, 1, ""))
+	self.textDragon:setString(NumberUtil.getNumberByStyle(balance.dragonDollar, 0, ""))
+end
 
 function TopBarModule:ctor()
 	local topBg = display.newSprite("#top_bg.png",0,0)
@@ -53,25 +64,26 @@ function TopBarModule:ctor()
 	self:addChild(self.menu)
 	
 	self.textBalance = ui.newTTFLabel({
-		text = "46,246,246,500",
+		text = "",
 		size = 20,
 		dimensions = CCSizeMake(200, 80),
 		x = 490,
 		y = display.top - 35
 	})
+	
 	self.textDragon = ui.newTTFLabel({
-		text = "6,246,500",
+		text = "",
 		align = ui.TEXT_ALIGN_RIGHT,
 		size = 20,
 		dimensions = CCSizeMake(200, 50),
-		x = 840,
+		x = 640,
 		y = display.top - 35
 	})
+	self.textBalance:setAnchorPoint(ccp(0, 0.5))
+	self.textDragon:setAnchorPoint(ccp(0, 0.5))
 	
 	self:addChild(self.textBalance)
 	self:addChild(self.textDragon)
-	
-	self.expBar:updateLevelInfo({level = 50})
 end
 
 return TopBarModule

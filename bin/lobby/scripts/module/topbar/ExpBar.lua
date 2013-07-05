@@ -3,7 +3,9 @@ local ExpBar = class("ExpBar", function()
 end)
 
 function ExpBar:ctor()
-	self.expBar = display.newSprite("#jyt.png",0,0)
+	self.expBar = display.newSprite("LobbyBar/jyt.png",0,0)
+	self.expBar:setAnchorPoint(ccp(0, 0.5))
+	self.expBar:setPositionX(0 - self.expBar:getContentSize().width * 0.5)
 	self:addChild(self.expBar)
 
 	self.textLabel = ui.newTTFLabel({
@@ -18,7 +20,7 @@ end
 
 function ExpBar:updateLevelInfo(info)
 	self.textLabel:setString("Lv" .. info.level)
-	self.expBar:setTextureRect(CCRectMake(0, 0, self.expBar:getContentSize().width * 1, self.expBar:getContentSize().height))
+	self.expBar:setTextureRect(CCRectMake(0, 0, self.expBar:getContentSize().width * 0.5, self.expBar:getContentSize().height))
 end
 
 return ExpBar

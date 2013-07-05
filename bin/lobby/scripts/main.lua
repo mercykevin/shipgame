@@ -1,5 +1,5 @@
---local initconnection = require("debugger")
---initconnection("127.0.0.1" , 10000 , 'luaidekey')
+local initconnection = require("debugger")
+initconnection("127.0.0.1" , 10000 , 'luaidekey')
 
 -- for CCLuaEngine
 function __G__TRACKBACK__(errorMessage)
@@ -9,7 +9,7 @@ function __G__TRACKBACK__(errorMessage)
     CCLuaLog("----------------------------------------")
 end
 
-CCLuaLoadChunksFromZip("assets/framework_precompiled.zip")
+CCLuaLoadChunksFromZip("res/framework_precompiled.zip")
 
 xpcall(function()
 	require("lobbyRoot")

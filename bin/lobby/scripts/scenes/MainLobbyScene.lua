@@ -11,7 +11,7 @@ function MainLobbyScene:ctor()
 	LayerManager.lobbyLayer:addChild(self.bg)
 	LayerManager.uiLayer:addChild(self.topBar)
 	
-	
+	self.topBar:updateBalanceInfo({amounts = 555553244353454, dragonDollar = 2234234234})
 	
 end
 
