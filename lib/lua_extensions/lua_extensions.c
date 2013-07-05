@@ -15,6 +15,8 @@ extern "C" {
 #include "luasocket.h"
 #include "mime.h"
 #include "socket_scripts.h"
+#include "pbc-lua.h"
+#include "lpeg_lua.h"
 
 static luaL_Reg luax_exts[] = {
     {"cjson", luaopen_cjson},
@@ -41,6 +43,10 @@ void luaopen_lua_extensions(lua_State *L)
 
     // load extensions script
     luaopen_socket_scripts(L);
+    // load lpeg support
+    luaopen_lpeg(L);
+    // load pbc support
+    luaopen_protobuf_c(L);
 }
 
 #if __cplusplus
