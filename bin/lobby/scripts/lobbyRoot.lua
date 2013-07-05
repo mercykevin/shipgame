@@ -20,7 +20,7 @@ function lobbyRoot.startLobby()
 --	
 --	print(lobbyRoot.jsonParse)
 --	print(lobbyRoot.jsonParse.encode(testJson))
-	CCFileUtils:sharedFileUtils():addSearchPath("assets/")
+	CCFileUtils:sharedFileUtils():addSearchPath("res/")
 	display.addSpriteFramesWithFile("lobbyAssets.plist", "lobbyAssets.png")
 	
 	

@@ -9,7 +9,7 @@ function __G__TRACKBACK__(errorMessage)
     CCLuaLog("----------------------------------------")
 end
 
-CCLuaLoadChunksFromZip("assets/framework_precompiled.zip")
+CCLuaLoadChunksFromZip("res/framework_precompiled.zip")
 
 xpcall(function()
 	require("lobbyRoot")
