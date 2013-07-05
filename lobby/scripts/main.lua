@@ -1,6 +1,8 @@
-local initconnection = require("debugger")
-initconnection("127.0.0.1" , 10000 , 'luaidekey')
+--local initconnection = require("debugger")
+--initconnection("127.0.0.1" , 10000 , 'luaidekey')
+--require"debugger.plugins.ffi"
 
+--require('mobdebug').start()
 -- for CCLuaEngine
 function __G__TRACKBACK__(errorMessage)
     CCLuaLog("----------------------------------------")
