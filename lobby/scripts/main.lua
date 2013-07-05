@@ -15,5 +15,7 @@ CCLuaLoadChunksFromZip("res/framework_precompiled.zip")
 
 xpcall(function()
 	require("lobbyRoot")
-	lobbyRoot.startLobby()
+--	lobbyRoot.startLobby()
+	lobbyRoot.testJson()
+	lobbyRoot.testPB()
 end, __G__TRACKBACK__)

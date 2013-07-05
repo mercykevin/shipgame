@@ -39,3 +39,54 @@ function onData(event)
 	serverJsonConnection:removeEventListener(CommandMap.CMD_REGISTER_PLAYER, onData)
 	print(event.name)
 end
+
+
+
+function lobbyRoot.testJson()
+	local testJson = {}
+	testJson.testParm1 = {1, 2, 3, 4}
+	testJson.name = "mainlobby";
+	testJson.testObject = {phone = 13918090549, address = {home = "abc street" , family = {father = "ljy", mother = "cwj"}}}
+	
+	local socket = require("socket")
+	local startTime = socket:gettime();
+	local strJson = jsonParse.encode(testJson);
+	print(strJson)
+	print(string.format("Json encode usedTime:%f",socket:gettime() - startTime) )
+	print("JsonLen:" .. string.len(strJson))
+	
+	
+
+	startTime = socket:gettime()
+	jsonParse.decode(strJson);
+	print(string.format("Json decode usedTime:%f",socket:gettime() - startTime) )
+	
+	
+end
+
+function lobbyRoot.testPB()
+	require "pbc.protobuf"
+	local parser = require "pbc.parser"
+	
+	
+	local t = parser.register("addressbook.proto", "/Users/user/Documents/MobileProject/lobby/scripts/pbc/test/pb/msg/")
+	
+	local testJson = {}
+	testJson.testParm1 = {1, 2, 3, 4}
+	testJson.name = "mainlobby";
+	testJson.testObject = {phone = 13918090549, address = {home = "abc street" , family = {father = "ljy", mother = "cwj"}}}
+	
+	local socket = require("socket")
+	local startTime = socket:gettime();
+	
+	local code = protobuf.encode("tutorial.Person", testJson)
+	print(code)
+	print(string.format("PB encode usedTime:%f",socket:gettime() - startTime) )
+	print("JsonLen:" .. string.len(code))
+	
+	startTime = socket:gettime()
+	local decode = protobuf.decode("tutorial.Person" , code)
+	print(string.format("PB decode usedTime:%f",socket:gettime() - startTime) )
+	
+	print(decode.name)
+end
