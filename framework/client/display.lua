@@ -183,8 +183,6 @@ display.BOTTOM_LEFT   = 7; display.LEFT_BOTTOM   = 7
 display.BOTTOM_RIGHT  = 8; display.RIGHT_BOTTOM  = 8
 display.BOTTOM_CENTER = 9; display.CENTER_BOTTOM = 9
 
-ccp = CCPoint
-
 display.ANCHOR_POINTS = {
     ccp(0.5, 0.5),  -- CENTER
     ccp(0, 1),      -- TOP_LEFT
@@ -522,6 +520,36 @@ function display.newSprite(filename, x, y)
         if x and y then sprite:setPosition(x, y) end
     else
         echoError("display.newSprite() - create sprite failure, filename %s", tostring(filename))
+    end
+
+    return sprite
+end
+
+--[[
+
+]]
+function display.newScale9Sprite(filename, x, y)
+    local sprite
+    if string.byte(filename) == 35 then -- first char is #
+        local frame = display.newSpriteFrame(string.sub(filename, 2))
+        if frame then
+            sprite = CCScale9Sprite:createWithSpriteFrame(frame)
+        end
+    else
+        if display.TEXTURES_PIXEL_FORMAT[filename] then
+            CCTexture2D:setDefaultAlphaPixelFormat(display.TEXTURES_PIXEL_FORMAT[filename])
+            sprite = CCScale9Sprite:create(filename)
+            CCTexture2D:setDefaultAlphaPixelFormat(kCCTexture2DPixelFormat_RGBA8888)
+        else
+            sprite = CCScale9Sprite:create(filename)
+        end
+    end
+
+    if sprite then
+        CCSpriteExtend.extend(sprite)
+        if x and y then sprite:setPosition(x, y) end
+    else
+        echoError("display.newScale9Sprite() - create sprite failure, filename %s", tostring(filename))
     end
 
     return sprite
@@ -970,7 +998,7 @@ create animate
 
 ### Example:
 
-    display.newAnimate(animation, isRestoreOriginalFrame)
+    display.newAnimate(animation)
 
 ### Example:
 
