@@ -80,7 +80,9 @@ bool AppDelegate::applicationDidFinishLaunching()
     {
         const string dir = path.substr(0, p);
         pStack->addSearchPath(dir.c_str());
-
+        CCLog("define lua global variable: GAME_LUA_ROOT=%s", dir.c_str());
+        pStack->pushString(dir.c_str());
+        lua_setglobal(L, "GAME_LUA_ROOT");
         p = dir.find_last_of("/\\");
         if (p != dir.npos)
         {

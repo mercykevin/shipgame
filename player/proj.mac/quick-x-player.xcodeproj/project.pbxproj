@@ -400,7 +400,7 @@
 				INFOPLIST_OUTPUT_FORMAT = binary;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "quick-x-player";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
@@ -452,7 +452,7 @@
 				INFOPLIST_OUTPUT_FORMAT = binary;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "quick-x-player";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};

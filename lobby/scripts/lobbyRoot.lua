@@ -69,7 +69,7 @@ function lobbyRoot.testPB()
 	local parser = require "pbc.parser"
 	
 	
-	local t = parser.register("addressbook.proto", GAME_LUA_ROOT.."/pbc/test/pb/msg/addressbook.proto")
+	local t = parser.register("addressbook.proto", GAME_LUA_ROOT.."/pbc/test/pb/msg")
 	
 	local testJson = {}
 	testJson.testParm1 = {1, 2, 3, 4}
