@@ -1,7 +1,7 @@
 
-local initconnection=require("debugger")
-initconnection("127.0.0.1", 10000, "game_debug", nil, nil, "/Users/oscar/workspace/game/shipgame/projects/CasinoGame/scripts")
-require"debugger.plugins.ffi"
+--local initconnection=require("debugger")
+--initconnection("127.0.0.1", 10000, "game_debug", nil, nil, "/Users/oscar/workspace/game/shipgame/projects/CasinoGame/scripts")
+--require"debugger.plugins.ffi"
 
 --require('mobdebug').start()
 
