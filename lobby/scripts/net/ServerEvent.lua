@@ -1,4 +1,0 @@
-
-ServerEvent = {
-	RequestError = "requestError"
-}
